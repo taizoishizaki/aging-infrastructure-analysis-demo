@@ -41,6 +41,13 @@ pip install earthengine-api geemap python-dotenv
 conda install -c conda-forge ipywidgets ipyleaflet
 ```
 
+Googleプロジェクト名を設定
+
+ファイルコピーし `GEE_PROJECT_ID` の値を置換する
+```
+cp .env.sample .env
+```
+
 ## Use
 
 1. 千代田区周辺のマップ
@@ -48,7 +55,7 @@ conda install -c conda-forge ipywidgets ipyleaflet
 python map_chiyoda.py
 ```
 
-![](./map_chiyoda.png)
+![](./map_chiyoda.jpg)
 
 2. 竹ビル周辺の経年劣化グラフ
 
@@ -60,7 +67,7 @@ python sar_take_building.py
 抽出したデータの「反射強度（VV）」の変化をグラフ化する。強度の著しい低下や不安定な変動は、建物の表面状態の変化や構造的な歪みの兆候として解釈できる。
 
 
-![](./sar_take_building.png)
+![](./sar_take_building.jpg)
 
 3. 千代田区全体の沈下マップ
 
@@ -69,7 +76,7 @@ python risk_map_chiyoda.py
 open risk_map_chiyoda.html
 ```
 
-![chiyoda](./risk_map_chiyoda.png)
+![chiyoda](./risk_map_chiyoda.jpg)
 
 マップの読み方：
 
